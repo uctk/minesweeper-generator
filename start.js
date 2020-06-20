@@ -22,7 +22,10 @@ var htmlGameGrid = generator.generate({
     lineEnd: "<br />"
 });
 
-var gameInfo = `> **Minesweeper**
+var gameInfo = `
+Discord Grid :
+
+> **Minesweeper**
 > __Difficulty :__ _\`${getDifficultyName(difficulty)}\`_ | __Mines :__ _\`${difficulty}% of grid\`_
 > 
 > Grid :
@@ -35,6 +38,7 @@ var gameInfo = `> **Minesweeper**
 
 
 HTML Grid : 
+
 ${htmlGameGrid}`;
 fs.writeFileSync("./generated.txt", gameInfo);
 
