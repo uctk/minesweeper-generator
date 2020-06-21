@@ -3,7 +3,7 @@ const fs = require("fs");
 var generator = require("./minesweeper-generator");
 generator.createWebLib();
 
-var difficulty = generator.DIFFICULTY.GLEBESKEFE;
+var difficulty = generator.DIFFICULTY.NORMAL;
 
 var discordGameGrid = generator.generate({
     difficulty: difficulty,
